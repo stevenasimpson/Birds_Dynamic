@@ -13,7 +13,7 @@ The data folder holds both the bird data and the bird images themselves (images 
 ## Development
 This project was a continuation of another birds-based web development project in a University of Otago paper.   
 In the other project, the data was collected from a JSON file and statically displayed.  
-This project uses a database on the backend to dynamically create, update and remove displayed information on the webpage.
+This project uses a database to dynamically create, update and remove displayed information on the webpage.
 
 ## Navigation
 By default, all birds are displayed in alphabetical order based on their common name.

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+    <%- include('partials/sidebar', { status: status}) %>
+    <main style="margin: 30px;">
+        <h1 style="height: 30px;">Delete A Bird</h1>
+        <form action="/birds/delete_search" method="GET">
+            <input type="number" name="id" placeholder="Input a bird ID to delete:" required>
+            <button type="submit" style="margin-bottom: 15px;">Delete</button>
+        </form>
+    </main>
+    <%- include('partials/footer') %>
+</body>
+</html>
+ 

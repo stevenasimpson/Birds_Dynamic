@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>404 Page</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+    <%- include('partials/sidebar', { status: null, results: null }) %>
+    <main style="padding:20px">
+        <h1>404 Page Not Found<br></h1>
+        <p>Did you take a wrong turn?</p>
+    </main>
+    <%- include('partials/footer') %>
+</body>
+</html>

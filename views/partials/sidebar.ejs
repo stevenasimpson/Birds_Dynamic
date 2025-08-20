@@ -1,0 +1,25 @@
+<aside>
+    <a class="button" href="/birds">Home</a>
+    <a class="button" href="/birds/create">Create New Bird</a>
+    <a class="button" href="/birds/inter_update">Update Bird</a>
+    <a class="button" href="/birds/inter_delete">Delete Bird</a>
+
+    <form action="/birds/bird_search" method="GET">
+        <input type="number" name="id" placeholder="Search for a bird ID to view:" required>
+        <button type="submit" style="margin-bottom: 15px;">Search</button>
+    </form>
+
+    <% if (status !== null) { %>
+        <h2>Conservation Status</h2>
+        <ul>
+            <% for (let i = 0; i < status.length; i++) { %>
+                <li style="position: relative;">
+                    <div class="circle-small" style="background: <%= status[i].status_colour %>"></div>
+                    <span><%= status[i].status_name %></span>
+                </li>
+            <% } %>
+        </ul>
+        <p>Conservation status from <a href="https://www.doc.govt.nz/nature/conservation-status/">DOC website</a></p>
+    <% } %>
+
+</aside>

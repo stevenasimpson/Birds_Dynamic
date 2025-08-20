@@ -15,6 +15,14 @@ This project was a continuation of another birds-based web development project i
 In the other project, the data was collected from a JSON file and statically displayed.  
 This project uses a database to dynamically create, update and remove displayed information on the webpage.
 
+## Initial Setup
+
+This project requires the use of Express.js and a MySQL server to view the data.   
+The first step is to setup and populate the database with the SQL files located in /sql/: run db_setup, then db_populate.  
+Then, the command 'npm install' can be used to install the required Express.js and MySQL dependencies.
+Finally, 'npm run start' can be used to deploy a locally hosted webpage with a linked database. 
+
+
 ## Navigation
 By default, all birds are displayed in alphabetical order based on their common name.
 
